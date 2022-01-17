@@ -1,0 +1,49 @@
+/* CSS Reset */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+
+	font-family: 'Montserrat', sans-serif;
+}
+nav {
+	background-color: #274648;
+	color: white;
+}
+nav {
+	background-color: #274648;
+	color: white;
+} /*bg is gone when omitted -_- */
+
+.landing {
+	background-color: #274648;
+}
+h3 {
+	color: #edc57f;
+}
+
+h5 {
+	color: #accbcd;
+}
+
+.btn {
+ 	background-color: #edc57f;
+ }
+
+ .btn:hover {
+  background-color: #f1f1ef;
+  box-shadow: 0px 3px 3px rgb(1.00,0.88,0.30);
+  transform: translateY(-5px);
+}
+a {
+	color: inherit;
+}
+/* mouse over link */
+a:hover {
+  box-shadow: v-offset 20px 20px 20px 0;
+  text-decoration: none;
+  }
+
