@@ -19,14 +19,19 @@ nav {
 
 }
 
+.aboutme {
+	background-color: #274648;
+}
+
 .landing {
 	background-color: #274648;
+
 }
 h3 {
 	color: #edc57f;
 }
 
-h2 {
+h2, h1 {
 
 	color: #edc57f;
 }
@@ -51,10 +56,16 @@ a {
 }
 
 a:hover {
+	text-decoration: none;
+}
+a + .nav-link:hover {
 	box-shadow: 0px 3px 3px rgb(1.00,0.88,0.30);
   transform: translateY(-5px);
   border-radius: 50px;
-  text-decoration: none;
+
+}
+.footer {
+	background-color: #274648;
 }
 
 
@@ -63,19 +74,30 @@ a:hover {
   transform: translateY(-5px);
   border-radius: 50px;
 }
-.gallery {
-		background-image: url(./images/otherimages/gallery-bg.png);
+.carousel {
+		background-color: #274648;
 }
+
+h2 ~ .carouseltitle {
+	color: #274648;
+}
+
+
 .projects {
 		background-color: #274648;	
 }
 
 
 .card {
-	background-color: #274648;
+	background-color: transparent;
+	border: none;
 
 
 }
 .card-title {
 	color: #274648;
 }
+.form {
+	background-color: #274648;
+}
+
