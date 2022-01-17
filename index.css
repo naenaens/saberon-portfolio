@@ -72,11 +72,10 @@ a:hover {
 
 
 .card {
-	background-color: #edc57f;
-	width: 75px;
-	height: 75px;
+	background-color: #274648;
+
 
 }
-.card-text {
+.card-title {
 	color: #274648;
 }
