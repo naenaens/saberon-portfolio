@@ -21,7 +21,9 @@
 
 	<title>Naenaens</title>
 </head>
+
 <body>
+
 	<!--Navbar Start-->
 	<nav class="navbar navbar-expand-lg navbar-dark" id="nav">
 		<a class="navbar-brand" href="#landing" id="naenaens"><img src="./images/otherimages/naenaens.png" class="image-fluid w-75 rounded"></a>
@@ -52,14 +54,14 @@
 
 	<!-- Landing Page Start -->
 
-	<div class="landing container-fluid min-vh-80 text-light text-center pt-2 pb-5" id="landing">
+	<div class="landing container-fluid lg-min-vh-100 xl-min-vh-100 text-light text-center pt-2 pb-5" id="landing">
 
 		<img src="./images/otherimages/navatar.gif" alt="" width= "250" class="avatar mt-5 mt-md-0 rounded-circle">
 					<h1>Hello There! Welcome to my portfolio!</h1>
 					<h3>To get started, click the icon below.</h3>
 					<div class="row mt-5 text-center">
 						<div class="offset-md-2 col-md-8 w-25 mx-auto">
-							<a href="#aboutme"><img src="./images/startbtn.png"></a>
+							<a class="start" href="#aboutme"><img src="./images/startbtn.png"></a>
 						</div>
 					</div>
 
@@ -69,7 +71,7 @@
 
 	<!-- About Me Page -->
 
-	<div class="aboutme container-fluid min-vh-100 text-light text-center pt-5 pb-5" id="aboutme">
+	<div class="aboutme container-fluid min-vh-100 text-light text-center pt-5" id="aboutme">
 		<div class="row">
 			<div class="col-lg-4 col-sm-12 col-md-12 sm-pb-3">
 				<img src="./images/otherimages/npicture.png" alt="" width= "250" class="mt-5 mt-md-0 p-md-1 pb-5 mb-3 border rounded-pill image-fluid">
@@ -83,7 +85,11 @@
     					<div class= "h-25 pb-2 pt-1">Hi! I'm Naenaens and I'm a Full-Stack Developer and a part-time Singer. </div>
    						<div class= "h-25 p-1">I used to work as an HR Professional but since I really found myself interested about Web Development, I decided to change the trajectory of my life and did a career shift! So here I am - a Full Stack Web Developer! </div>
    						<div class= "h-25 p-2 pb-4">Awesomeness is wanted here. Let's collab and have fun!.</div>
-   						<button type="button" class="btn rounded-pill mt-2 p-2 mb-4" href=#form><b><a href="#form">Let's Talk</a></b></button>
+   							<div class="container-fluid">
+   							<button type="button" class="btn rounded-pill mt-2 p-2 mb-4 pl-2 pr-2 mr-2"><b><a href="#carousel">Gallery</a></b></button>
+   							<button type="button" class="btn rounded-pill mt-2 p-2 mb-4 pl-2 pr-2 mr-2"><b><a href="#projects">Projects</a></b></button>
+   							<button type="button" class="btn rounded-pill mt-2 p-2 mb-4 pl-2 pr-2" href=#form><b><a href="#form">Let's Talk</a></b></button>
+   							</div>
  					</div>					
 			</div>
 			<div class="col-lg-4 col-sm-12 col-md-12 pt-lg-2 pt-md-2 pt-sm-5 pl-5 pr-5">
@@ -124,7 +130,7 @@
 	<!-- Gallery Start -->
 	
 
-	 <div class="carousel text-center pb-2" id="carousel">
+	 <div class="carousel text-center pt-5 pb-2 lg-min-vh-100 md-min-vh-100 sm-min-vh-80" id="carousel">
 		<h2 class="carouseltitle"><strong>My moments</strong></h2>
 		<a href="#nav" class="text-secondary text-center">Back to the top</a>
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -191,8 +197,8 @@
 
 	<!-- Projects Start -->
 
-	<div class= "projects text-light min-vh-100 pt-5 p-5 text-center" id="projects">
-					<h2 class="mb-3"><strong>Projects</strong></h2>
+	<div class= "projects text-light min-vh-100 pt-5 pb-5 pr-4 pr-lg-3 text-center" id="projects">
+					<h2 class="mb-3 ml-2"><strong>Projects</strong></h2>
 					<a href="#nav" class="text-secondary text-center">Back to the top</a>
 					
 					<div class="d-lg-flex justify-content-center p-md-5">
@@ -232,15 +238,20 @@
 
 	<!-- Projects End -->
 
+	<!-- Form with map -->
+
+	<div class="contact-map container-fluid ml-auto mr-auto">
+		<div class="row">
+
 	<!-- Form Start -->
 
-	<div class="form min-vh-100 p-5 text-center" id="form">
+	<div class="form min-vh-100 p-5 text-center col-12 col-sm-12 col-md-6" id="form">
 
-					<h2 class="text-light text-center">Let's Talk</h2>
+					<h2 class="titlecontact text-center">Let's Talk</h2>
 						<a href="#nav" class="text-secondary text-center">Back to the top</a>
 
 					<div class="row mt-3">
-						<form class="bg-dark col-12 offset-md-2 col-md-8 offset-xl-4 col-xl-4 p-3 rounded">
+						<form class="form-proper col-12 col-md-8 col-xl-10 p-3 rounded ml-auto mr-auto">
 							<div class="form-group">
 								<label class="text-light" for="name">Name</label>
 								<input type="text" class="form-control" id="name" placeholder="Your Name">
@@ -256,7 +267,7 @@
 							<div class="form-group">
 								<label class="text-light" for="concern">Concern</label>
 								<select class="form-control" id="concern">
-									<option>Quotation</option>
+									<option>Inquiry</option>
 									<option>Appointment</option>
 									<option>Follow-Up</option>
 								</select>
@@ -265,23 +276,38 @@
 								<label class="text-light" for="message">Message</label>
 								<textarea class="form-control" id="message" rows="7"></textarea>
 							</div>
-							<button type="submit" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Send Email</button>
+							<button type="submit" class="btn btn-dark rounded-pill" data-toggle="modal" data-target="#exampleModal">Send Email</button>
 						</form>
 					</div>
 
 				</div>
+	<!-- Map Start -->
 
+	<div class="map col-12 mt-auto mb-auto text-center col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column pb-3">
+		<h3>I'm located here!</h3>
+		 <img src="./images/arrow-down.gif" class="arrow-down m-3">
 		
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251170.46572908817!2d123.70620731937113!3d10.378734102284982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999258dcd2dfd%3A0x4c34030cdbd33507!2sCebu%20City%2C%20Cebu!5e0!3m2!1sen!2sph!4v1642466823829!5m2!1sen!2sph" allowfullscreen="" loading="lazy" class="w-75"></iframe>
+	</div>
+
+
+	<!-- Map End -->		
 
 	<!--Form End -->
+		</div>
+
+	</div>
+
+	<!-- Form with map end -->
 
 	<!-- Footer Start -->
 	<div class="footer pt-3" id="footer">
 		<div class="container-fluid pb-1">
 		<p class=" d-block text-light text-center">&copy; 2022 All Rights Reserved.</p>
+		<p class=" d-block text-light text-center"><em>Quick Links</em></p>
 	</div>
-	<div class="container-fluid">
-		<p class=" d-block text-light text-center">Quick Links</p>
+	<div class="container-fluid d-flex justify-content-center">
+		
 		<div class="row text-center">
    	 			<div class= "col-lg-3 col-sm-6 col-md-6 pb-2"><a href="https://www.facebook.com/naeyanmk/"><img src="./images/otherimages/facebook-logo.png" class="image-fluid w-25"></a></div>
     			<div class= "col-lg-3 col-sm-6 col-md-6 pb-2"><a href="https://www.linkedin.com/in/naenaens/"><img src="./images/otherimages/linkedin-logo.png" class="image-fluid w-25"></a></div>
