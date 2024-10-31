@@ -21,10 +21,12 @@ nav {
 
 .aboutme {
 	background-color: #274648;
+	height: 100vh;
 }
 
 .landing {
 	background-color: #274648;
+	height: 100vh;
 
 }
 h3 {
@@ -91,6 +93,7 @@ a.start:hover {
 
 .carousel {
 		background-color: #274648;
+		height: 100vh;
 }
 
 h2 ~ .carouseltitle {
@@ -100,6 +103,7 @@ h2 ~ .carouseltitle {
 
 .projects {
 		background-color: #274648;	
+		height: 100vh;
 }
 
 
